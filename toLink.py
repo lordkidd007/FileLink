@@ -43,8 +43,8 @@ def Get0(iNum, lst111):
         for i in range(iCount):
             strRes += "0"
 
-    strRes = strRes +"LordKidd" +str(iNum)
-    return strRes
+    strRes = strRes  +str(iNum)
+    return "LordKidd"+strRes
 
 
 strRes = ""
