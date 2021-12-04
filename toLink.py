@@ -43,7 +43,7 @@ def Get0(iNum, lst111):
         for i in range(iCount):
             strRes += "0"
 
-    strRes = strRes + str(iNum)
+    strRes = strRes +"LordKidd" +str(iNum)
     return strRes
 
 
@@ -60,6 +60,8 @@ for str1 in lst11:
         strRes += strRes1 + "\n"
     else:
         pass
+
+
 if(strRes != ""):
     ipt = open("node.txt", "w", encoding="utf-8")
     ipt.write(strRes)
