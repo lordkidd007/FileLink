@@ -3,8 +3,6 @@ import base64
 import os
 import json
 import time
-# from codecs import iterdecode
-# from io import IncrementalNewlineDecoder
 global iNo
 iNo = 0
 str1 = "vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIuW8oOa1qeiKgueCuUBtZmZ4el85MSIsDQogICJhZGQiOiAiMTMzLndnb25nLnh5eiIsDQogICJwb3J0IjogIjUyMzMzIiwNCiAgImlkIjogImIyMGUyYWU5LWI4MjItMzViZS05NjU3LWE4MWJiZWY1YWViNiIsDQogICJhaWQiOiAiMiIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAidGNwIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInQubWUvdnBuaGF0IiwNCiAgInBhdGgiOiAidC5tZS92cG5wb29sIiwNCiAgInRscyI6ICIiLA0KICAic25pIjogIiINCn0="
@@ -67,8 +65,6 @@ if(strRes != ""):
     ipt.write(strRes)
     ipt.close()
     cmd = "base64 node.txt > v2.txt"
-    print()
-
     # print(strRes)
     os.system(cmd)
     os.system("git add .")

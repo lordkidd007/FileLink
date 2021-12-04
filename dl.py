@@ -1,1 +1,0 @@
-https://v2ray.neocities.org/v2ray.txt
