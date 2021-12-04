@@ -66,7 +66,7 @@ if(strRes != ""):
     ipt = open("node.txt", "w", encoding="utf-8")
     ipt.write(strRes)
     ipt.close()
-    cmd = "base64 node.txt > v2.txt"
+    cmd = "base64 node.txt > index.html"
     # print(strRes)
     os.system(cmd)
     os.system("git add .")
