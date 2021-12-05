@@ -72,7 +72,7 @@ if(strRes != ""):
     os.system("git add .")
     os.system("git commit -m '%s'" %
               (time.strftime("%Y-%m-%d%H:%M:%S", time.localtime())))
-    # os.system("git push")
+    os.system("git push")
 
     # pass
 else:
