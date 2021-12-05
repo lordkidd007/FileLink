@@ -10,7 +10,7 @@ iNo = 0
 os.system("curl -O https://v2ray.neocities.org/v2ray.txt")
 os.system("curl -O https://cdn.jsdelivr.net/gh/freefq/free@master/v2")
 # vmess://eyd2JzogJzInLCAncHMnOiAn5L2/55So5YmN6K6w5b6X5pu05paw6K6i6ZiFJywgJ2FkZCc6ICfkvb/nlKjliY3orrDlvpfmm7TmlrDorqLpmIUnLCAncG9ydCc6ICcwJywgJ2lkJzogJzI4YWQwOTIyLTViMWItNDVhNi05ZjBiLTBlZmE5NmNiOGY1NScsICdhaWQnOiAnMCcsICduZXQnOiAndGNwJywgJ3R5cGUnOiAnbm9uZScsICdob3N0JzogJycsICdwYXRoJzogJycsICd0bHMnOiAnJ30=
-os.system("echo eyd2JzogJzInLCAncHMnOiAnMTIzJywgJ2FkZCc6ICfkvb/nlKjliY3orrDlvpfmm7TmlrDorqLpmIUnLCAncG9ydCc6ICcwJywgJ2lkJzogJzI4YWQwOTIyLTViMWItNDVhNi05ZjBiLTBlZmE5NmNiOGY1NScsICdhaWQnOiAnMCcsICduZXQnOiAndGNwJywgJ3R5cGUnOiAnbm9uZScsICdob3N0JzogJycsICdwYXRoJzogJycsICd0bHMnOiAnJ30=> source.txt")
+os.system("echo eyd2JzogJzInLCAncHMnOiAn5L2/55So5YmN6K6w5b6X5pu05paw6K6i6ZiFJywgJ2FkZCc6ICfkvb/nlKjliY3orrDlvpfmm7TmlrDorqLpmIUnLCAncG9ydCc6ICcwJywgJ2lkJzogJzI4YWQwOTIyLTViMWItNDVhNi05ZjBiLTBlZmE5NmNiOGY1NScsICdhaWQnOiAnMCcsICduZXQnOiAndGNwJywgJ3R5cGUnOiAnbm9uZScsICdob3N0JzogJycsICdwYXRoJzogJycsICd0bHMnOiAnJ30=> source.txt")
 os.system("base64 -d v2 >> source.txt")
 os.system("base64 -d v2ray.txt >> source.txt")
 # exit()
