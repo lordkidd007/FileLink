@@ -6,6 +6,7 @@ import time
 
 global iNo
 iNo = 0
+os.system("git pull")
 
 os.system("curl -O https://v2ray.neocities.org/v2ray.txt")
 os.system("curl -O https://cdn.jsdelivr.net/gh/freefq/free@master/v2")
