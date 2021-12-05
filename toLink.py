@@ -66,13 +66,13 @@ if(strRes != ""):
     ipt = open("node.txt", "w", encoding="utf-8")
     ipt.write(strRes)
     ipt.close()
-    cmd = "base64 node.txt > v2.txt"
+    cmd = "base64 -w 0node.txt > v2.txt"
     # print(strRes)
     os.system(cmd)
     os.system("git add .")
     os.system("git commit -m '%s'" %
               (time.strftime("%Y-%m-%d%H:%M:%S", time.localtime())))
-    os.system("git push")
+    # os.system("git push")
 
     # pass
 else:
