@@ -6,10 +6,13 @@ import time
 global iNo
 iNo = 0
 str1 = "vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIuW8oOa1qeiKgueCuUBtZmZ4el85MSIsDQogICJhZGQiOiAiMTMzLndnb25nLnh5eiIsDQogICJwb3J0IjogIjUyMzMzIiwNCiAgImlkIjogImIyMGUyYWU5LWI4MjItMzViZS05NjU3LWE4MWJiZWY1YWViNiIsDQogICJhaWQiOiAiMiIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAidGNwIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInQubWUvdnBuaGF0IiwNCiAgInBhdGgiOiAidC5tZS92cG5wb29sIiwNCiAgInRscyI6ICIiLA0KICAic25pIjogIiINCn0="
-
+# https://cdn.jsdelivr.net/gh/freefq/free@master/v2
 os.system("curl -O https://v2ray.neocities.org/v2ray.txt")
+os.system("curl -O https://cdn.jsdelivr.net/gh/freefq/free@master/v2")
 os.system("base64 -d v2ray.txt > source.txt")
+os.system("base64 -d v2 >> source.txt")
 
+# exit()
 
 opt = open('source.txt', encoding="utf-8")
 
