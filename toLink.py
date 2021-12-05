@@ -3,22 +3,19 @@ import base64
 import os
 import json
 import time
+
 global iNo
 iNo = 0
-str1 = "vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIuW8oOa1qeiKgueCuUBtZmZ4el85MSIsDQogICJhZGQiOiAiMTMzLndnb25nLnh5eiIsDQogICJwb3J0IjogIjUyMzMzIiwNCiAgImlkIjogImIyMGUyYWU5LWI4MjItMzViZS05NjU3LWE4MWJiZWY1YWViNiIsDQogICJhaWQiOiAiMiIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAidGNwIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInQubWUvdnBuaGF0IiwNCiAgInBhdGgiOiAidC5tZS92cG5wb29sIiwNCiAgInRscyI6ICIiLA0KICAic25pIjogIiINCn0="
-# https://cdn.jsdelivr.net/gh/freefq/free@master/v2
+
 os.system("curl -O https://v2ray.neocities.org/v2ray.txt")
 os.system("curl -O https://cdn.jsdelivr.net/gh/freefq/free@master/v2")
-os.system("base64 -d v2ray.txt > source.txt")
-os.system("base64 -d v2 >> source.txt")
-
-# exit()
+os.system("base64 -d v2 > source.txt")
+os.system("base64 -d v2ray.txt >> source.txt")
 
 opt = open('source.txt', encoding="utf-8")
 
 lst11 = opt.readlines()
 opt.close()
-# lst11 = ['trojan://0d0a53dd-6a0f-47ac-8d0c-6eca674926b2@t1.ssrsub.com:11033#%e6%8c%89%e5%ae%9e%e9%99%85%e7%9c%8b%e9%a3%8e%e6%99%af%e8%af%b4%e7%bf%bb%e5%b0%b1%e7%bf%bb%e5%b0%b1%e6%98%af%e5%af%b9%e6%96%b9']
 
 
 def VmessClear(strUrl, iNum, lst111):
@@ -46,7 +43,7 @@ def Get0(iNum, lst111):
         for i in range(iCount):
             strRes += "0"
 
-    strRes = strRes  +str(iNum)
+    strRes = strRes + str(iNum)
     return "LordKidd"+strRes
 
 
@@ -70,13 +67,11 @@ if(strRes != ""):
     ipt.write(strRes)
     ipt.close()
     cmd = "base64 -w 0 node.txt > v2.txt"
-    # print(strRes)
     os.system(cmd)
     os.system("git add .")
     os.system("git commit -m '%s'" %
               (time.strftime("%Y-%m-%d%H:%M:%S", time.localtime())))
     os.system("git push")
 
-    # pass
 else:
     pass
