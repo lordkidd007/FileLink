@@ -10,11 +10,9 @@ os.system("git pull")
 
 os.system("curl -O https://v2ray.neocities.org/v2ray.txt")
 os.system("curl -O https://cdn.jsdelivr.net/gh/freefq/free@master/v2")
-# vmess://eyd2JzogJzInLCAncHMnOiAn5L2/55So5YmN6K6w5b6X5pu05paw6K6i6ZiFJywgJ2FkZCc6ICfkvb/nlKjliY3orrDlvpfmm7TmlrDorqLpmIUnLCAncG9ydCc6ICcwJywgJ2lkJzogJzI4YWQwOTIyLTViMWItNDVhNi05ZjBiLTBlZmE5NmNiOGY1NScsICdhaWQnOiAnMCcsICduZXQnOiAndGNwJywgJ3R5cGUnOiAnbm9uZScsICdob3N0JzogJycsICdwYXRoJzogJycsICd0bHMnOiAnJ30=
-# os.system("echo vmess://eyd2JzogJzInLCAncHMnOiAnMTIzJywgJ2FkZCc6ICfkvb/nlKjliY3orrDlvpfmm7TmlrDorqLpmIUnLCAncG9ydCc6ICcwJywgJ2lkJzogJzI4YWQwOTIyLTViMWItNDVhNi05ZjBiLTBlZmE5NmNiOGY1NScsICdhaWQnOiAnMCcsICduZXQnOiAndGNwJywgJ3R5cGUnOiAnbm9uZScsICdob3N0JzogJycsICdwYXRoJzogJycsICd0bHMnOiAnJ30=> source.txt")
+
 os.system("base64 -d v2 > source.txt")
 os.system("base64 -d v2ray.txt >> source.txt")
-# exit()
 opt = open('source.txt', encoding="utf-8")
 
 lst11 = opt.readlines()
@@ -76,8 +74,7 @@ if(strRes != ""):
     ipt = open("index.html", "w", encoding="utf-8")
     ipt.write(strTime2)
     ipt.close()
-#    print("echo '%s' > index.html" % strTime2)
-#    os.system("echo '%s' > index.html" % strTime2)
+
     os.system("git add .")
     os.system("git commit -m '%s'" %(strTime) )
     os.system("git push")
