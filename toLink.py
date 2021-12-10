@@ -71,9 +71,9 @@ if(strRes != ""):
     ipt.close()
     cmd = "base64 -w 0 node.txt > v2.txt"
     os.system(cmd)
-    os.system("git add .")
     strTime = time.strftime("%Y-%m-%d%H:%M:%S", time.localtime())
     os.system("echo %s > index.html" % strTime)
+    os.system("git add .")
     os.system("git commit -m '%s'" %(strTime) )
     os.system("git push")
 
