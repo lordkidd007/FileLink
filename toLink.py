@@ -73,6 +73,7 @@ if(strRes != ""):
     os.system(cmd)
     strTime = time.strftime("%Y-%m-%d-%H:%M:%S", time.localtime())
     strTime2 = "<h1>%s<h1>" % strTime
+    print("echo '%s' > index.html" % strTime2)
     os.system("echo '%s' > index.html" % strTime2)
     os.system("git add .")
     os.system("git commit -m '%s'" %(strTime) )
