@@ -70,9 +70,10 @@ if(strRes != ""):
     cmd = "base64 -w 0 node.txt > v2.txt"
     os.system(cmd)
     strTime = time.strftime("%Y-%m-%d-%H:%M:%S", time.localtime())
-    strTime2 = "<h1>%s<h1>" % strTime
+    strTime2 = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    strTime3 = "<h1>%s<h1>" % strTime2
     ipt = open("index.html", "w", encoding="utf-8")
-    ipt.write(strTime2)
+    ipt.write(strTime3)
     ipt.close()
 
     os.system("git add .")
