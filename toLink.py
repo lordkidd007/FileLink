@@ -67,7 +67,7 @@ if(strRes != ""):
     ipt = open("node.txt", "w", encoding="utf-8")
     ipt.write(strRes)
     ipt.close()
-    cmd = "base64 -w 0 node.txt > v2.txt"
+    cmd = "base64 -w 0 node.txt > v2ray"
     os.system(cmd)
     strTime = time.strftime("%Y-%m-%d-%H:%M:%S", time.localtime())
     strTime2 = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
